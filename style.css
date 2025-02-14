@@ -13,10 +13,18 @@
     overflow: hidden;
     background-color: rgb(206, 209, 211);
 }
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #333; 
+    color: white; 
+    padding: 10px 20px; 
+    z-index: 1000; 
 }
 .logo{
     width: 250px;
