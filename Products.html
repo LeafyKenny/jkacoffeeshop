@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-	<title>Products</title>
-</head>
-<body>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
   <div class="navbar">
     <img src="logo.png" class="logo">
     <nav>
-        <ul>
-        <li><a href="Index.html">HOME</a></li>
-         <li><a href="About.html">ABOUT</a></li>
-         <li><a href="Products.html">PRODUCT</a></li>
-        </ul>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Products.html">Products</a></li>
+      </ul>
     </nav>
   </div>
-<!-- COFFEE PRODUCT 1-->
- <h4> Cafe Americano </h4>
- <img src="ice americano.jpg" style="height: 200px">
-<!-- COFFEE PRODUCT 2-->
-<h4> Iced Latte </h4>
-<img src="ice latte.jpg" style="height: 200px">
-<!-- COFFEE PRODUCT 3-->
-<h4> Hot Chocolate </h4>
-<img src="hot chocolate.jpg" style="height: 200px">
-<!--COFFEE PRODUCT 4-->
-<h4> Brewed Coffee </h4>
-<img src="Brewed coffee.jpg" style="height: 200px">
-<!--COFFEE PRODUCT 5-->
-<h4> Espreso </h4>
-<img src="espreso.png" style="height: 200px">
-</body>
+  <title>Products | JKA Coffee Shop</title>
+</head>
 
+<body>
+
+  <h1 class="pagetitle">Products</h1>
+  <h2 class="pagedescription">Enjoy our products handy made and 100% fresh from our farm partners.</h2>
+  <div class="products-container">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('ice americano.jpg');"></div>
+      <h4>Cafe Americano</h4>
+      <p class="price">₱ 199.00</p>
+      <span class="tag">Best Seller</span>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('ice latte.jpg');"></div>
+      <h4>Iced Latte</h4>
+      <p class="price">₱ 249.00</p>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('hot chocolate.jpg');"></div>
+      <h4>Hot Chocolate</h4>
+      <p class="price">₱ 119.00</p>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('Brewed coffee.jpg');"></div>
+      <h4>Brewed Coffee</h4>
+      <p class="price">₱ 149.00</p>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image" style="background-image: url('espresso.png');"></div>
+      <h4>Espresso</h4>
+      <p class="price">₱ 179.00</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+  <script src="product.js"></script>
+</body>
+<footer class="footer">
+  <div class="social-links">
+      <a href="https://www.facebook.com">
+          <div class="social-item">
+              <img src="soc_fb.png" alt="Facebook">
+          </div>
+      </a>
+      <a href="https://www.x.com">
+          <div class="social-item">
+              <img src="soc_x.png" alt="Twitter">
+          </div>
+      </a>
+      <a href="https://www.instagram.com">
+          <div class="social-item">
+              <img src="soc_ig.png" alt="Instagram">
+          </div>
+      </a>
+  </div>
+  
+
+  <p>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
+      <a href="terms.html" class="footer-link">Terms and Conditions</a>
+  </p>
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> JKA Coffee Shop. All Rights Reserved.</p>
+</footer> 
+
+</html>

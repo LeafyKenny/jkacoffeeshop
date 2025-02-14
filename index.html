@@ -1,45 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1,0">
-        <title>JKA Coffee Shop</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-    </body>
-</html>
-  <div class="container">
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to JKA Coffee Shop!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
     <div class="navbar">
-       <img src="logo.png" class="logo">
-       <nav>
-           <ul>
-            <li><a href="Index.html">HOME</a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Products.html">PRODUCT</a></li>
-           </ul>
-       </nav>
-    </nav>
-       <img src="j_coffee-beans.jpg" class="menu-icon">
+        <img src="logo.png" class="logo" alt="JKA Logo">
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="row">
-        <div class="col-1">
-            <h2>JKA<br>Coffee Shop</h2>
-            <h3>Make your day great with our coffee!</h3>
-            <p>Welcome to our coffee paradise, where every <br>bean tells a story and every cup sparks.</p>
-            <button type="button">Order Now<img src="img_snow.jpg"></button>
+    <div class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop class="hero-video">
+            <source src="landingclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Content Section -->
+        <div class="row hero-content">
+            <div class="col-1">
+                <h2>JKA Coffee Shop</h2>
+                <h3>Make your day great with our coffee!</h3>
+                <p>Welcome to our coffee paradise, where every <br>bean tells a story and every cup sparks.</p>
+                <button type="button" id="orderNowButton">
+                    Order Now <img src="cart.png" alt="Order">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="logo 2.png" class="coffee" alt="Coffee Image">
+            </div>
         </div>
+    
+        <!-- Include JS File -->
+        <script src="landing.js"></script>
     </div>
-    <div class="col-2">
-            <img src="logo 2.png" class=" coffee">
-        </div>
-    </div>
-   
- <div class="social-links">
-    <a href="https://www.facebook.com"><img src="5.png"></a>
-    <a href="https://www.x.com"><img src="6.png">
-    <a href="https://www.instagram.com"><img src="2.png">
- </div>
+    
 </body>
+<!-- Footer Section -->
+
+<footer class="footer">
+    <div class="social-links">
+        <a href="https://www.facebook.com">
+            <div class="social-item">
+                <img src="soc_fb.png" alt="Facebook">
+            </div>
+        </a>
+        <a href="https://www.x.com">
+            <div class="social-item">
+                <img src="soc_x.png" alt="Twitter">
+            </div>
+        </a>
+        <a href="https://www.instagram.com">
+            <div class="social-item">
+                <img src="soc_ig.png" alt="Instagram">
+            </div>
+        </a>
+    </div>
+    
+
+    <p>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
+        <a href="terms.html" class="footer-link">Terms and Conditions</a>
+    </p>
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> JKA Coffee Shop. All Rights Reserved.</p>
+</footer> 
+
 </html>
